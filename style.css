@@ -7,6 +7,7 @@
 
 body {
 	background-image: url("image/sign_up.jpg");
+	background-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
