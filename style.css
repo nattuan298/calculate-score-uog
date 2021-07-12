@@ -7,12 +7,12 @@
 
 body {
 	background-image: url("image/sign_up.jpg");
-	background-size: 100%;
+	background-size:cover;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 120vh;
 	margin: 0;
 }
 
@@ -30,15 +30,13 @@ body {
 	background-color: #f7f7f7;
 	padding: 20px 40px;
 }
-.header h1 {
-	text-align: center;
-	padding-left: 10px;
-	color: #e74c3c;
 
+.header .image{
+	padding-left: 50px;
 }
 
 .header h2 {
-	color: #8e44ad;
+	color: #e74c3c;
 	margin: 0;
 	text-align: center;
 }
