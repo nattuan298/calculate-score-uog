@@ -8,26 +8,48 @@
   <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
   <script src="main.js" defer></script>
+  <script src="popup.js" defer></script>
   <title>Graduation Score</title>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <img src="image/logo.png" alt="" class="image"> <br> <br>
-      <h2>Enter Your Score</h2>
+    </div>
+    <div class="popup">
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn">Guide</button>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          You can calculate your graduation score here. <br><br>
+          Calculation formula:  <br>
+          ((Project x 60) + (Top 2 subjects x 15)) / 90 <br><br>
+          Enter score on 100 scale. <br>
+          Example: <br> 
+          - Proposal: 70 <br>
+          - Final Project: 70 <br>
+          - Subject 1: 70 <br>
+          - Subject 2: 70 <br>
+        </p>
+        </div>
+      </div>
     </div>
     <form id="form" class="form">
-      <h3>Score Project</h3>
+      <h3>Score of Project (1682)</h3>
       <div class="form-control">
         <label for="proposal">Project Proposal</label>
-        <input type="number" placeholder="e.g: 70" id="proposal" />
+        <input type="number" placeholder="e.g: Enter 70" id="proposal" />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
       </div>
       <div class="form-control">
         <label for="project">Final Project</label>
-        <input type="number" placeholder="e.g: 70" id="project" />
+        <input type="number" placeholder="e.g: Enter 70" id="project" />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
@@ -35,14 +57,14 @@
       <h3>Score Top 2 Subjects (TOP-UP)</h3>
       <div class="form-control">
         <label for="subject1">Subject 1</label>
-        <input type="number" placeholder="e.g: 70" id="subject1" />
+        <input type="number" placeholder="e.g: Enter 70" id="subject1" />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
       </div>
       <div class="form-control">
         <label for="subject2">Subject 2</label>
-        <input type="number" placeholder="e.g: 70" id="subject2" />
+        <input type="number" placeholder="e.g: Enter 70" id="subject2" />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
@@ -50,7 +72,7 @@
       <button>Calculate</button>
     </form>
     <div style="text-align: center;">
-      <span style="border:1px solid rgb(42, 50, 88); color: brown;">Created by N A T &#169; 2021</span>
+      <span style="border:1px solid rgb(42, 50, 88); color: rgb(90, 80, 233);">Created by N A T &#169; 2021</span>
     </div>
     
   </div>
