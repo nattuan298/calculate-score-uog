@@ -4,39 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
-  <script src="main.js" defer></script>
-  <script src="popup.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/popup.js" defer></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="css/style.css">
+  <!-- <script src="js/bootstrap.min.js" defer></script> -->
   <title>Graduation Score</title>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <img src="image/logo.png" alt="" class="image"> <br> <br>
-    </div>
-    <div class="popup">
-      <!-- Trigger/Open The Modal -->
-      <button id="myBtn">Guide</button>
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>
-          You can calculate your graduation score here. <br><br>
-          Calculation formula:  <br>
-          ((Project x 60) + (Top 2 subjects x 15)) / 90 <br><br>
-          Enter score on 100 scale. <br>
-          Example: <br> 
-          - Proposal: 70 <br>
-          - Final Project: 70 <br>
-          - Subject 1: 70 <br>
-          - Subject 2: 70 <br>
-        </p>
-        </div>
-      </div>
     </div>
     <form id="form" class="form">
       <h3>Score of Project (1682)</h3>
@@ -71,10 +52,67 @@
       </div>
       <button>Calculate</button>
     </form>
-    <div style="text-align: center;">
-      <span style="border:1px solid rgb(42, 50, 88); color: rgb(90, 80, 233);">Created by N A T &#169; 2021</span>
+
+    <!-- Guide HTML -->
+    <div class="popup">
+      <!-- Trigger/Open The Modal -->
+      <div>
+        <button id="myBtn">Guide</button>
+      </div>
+      
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <button class="close"><i class="fas fa-times"></i></button>
+        <p>
+          You can calculate your graduation score here. <br><br>
+          Calculation formula:  <br>
+          ((Project x 60) + (Top 2 subjects x 15)) / 90 <br><br>
+          Enter score on 100 scale. <br>
+          Example: <br> 
+          - Proposal: 70 <br>
+          - Final Project: 70 <br>
+          - Subject 1: 70 <br>
+          - Subject 2: 70 <br>
+        </p>
+        </div>
+      </div>
     </div>
-    
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>Created with <i class="fa fa-heart"></i> by
+          <a target="_blank" href="https://florin-pop.com">N A T</a></p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <h4>Contact Via</h4>
+        <ul>
+          <li>
+            <a href="https://linkedin.com/in/natuan2908" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            
+          </li>
+          <li>
+            <a href="https://facebook.com/natuan.298" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/_nat.298" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="floating-text">
+     <span>&#169; 2021</span>
+    </div>
+    <button class="floating-btn">
+      About Me
+    </button>
   </div>
 </body>
 </html>
