@@ -188,7 +188,7 @@ body {
   padding: 20px;
 }
 
-.modal-content button.close {
+.modal .modal-content .close {
 	border: 1px;
 	background-color: #3157c9;
 	color: #dfe3ec;
@@ -199,11 +199,11 @@ body {
 	right: 2px;
 }
 
-.modal-content button.close:hover {
+.modal .modal-content .close:hover {
 	color: #97A5CE;
 }
 
-.modal-content button.close:focus {
+.modal .modal-content .close:focus {
 	outline: none;
 }
 
